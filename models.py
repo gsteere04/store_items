@@ -1,20 +1,9 @@
 from pydantic import BaseModel
 
 
-class Laptop(BaseModel):
+class Item(BaseModel):
     id: int
     name: str
     description: str
-    price: int
+    price: float
 
-class Keyboard(BaseModel):
-    id: int
-    name: str
-    description: str
-    price: int
-
-class Mouse(BaseModel):
-    id: int
-    name: str
-    description: str
-    price: int
